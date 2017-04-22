@@ -1,0 +1,371 @@
+li { 
+    text-align: right;
+}
+
+.logo {
+    color: white !important;
+    background-color: rgb(231, 76, 60)!important;
+    font-weight: 700;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
+}
+
+.logo:hover {
+    color: white !important;
+    font-weight: 700;
+    background-color: rgb(192, 57, 43) !important;
+}
+
+.nav {
+    float: right;
+}
+
+.header {
+    margin: 0 -15px 0 -15px !important;
+    height: 640px;
+    background: url("../svg/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.navigation-bar {
+    border: none !important;
+    background: none !important;
+}
+
+.nav>li:nth-child(n)>a:nth-child(n) {
+    color: white;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    -o-transition: color .1s ease-out, background .1s ease-in;
+    -ms-transition: color .1s ease-out, background .1s ease-in;
+    -moz-transition: color .1s ease-out, background .1s ease-in;
+    -webkit-transition: color .1s ease-out, background .1s ease-in;
+    /* ...and now for the proper property */
+    transition: color .1s ease-out, background .1s ease-in;
+    background: none;
+}
+
+.nav>li:nth-child(n)>a:nth-child(n):hover,
+.nav>li:nth-child(n)>a:nth-child(n):focus {
+    color: rgb(231, 76, 60);
+    background: none;
+}
+
+.big-title {
+    margin: 150px 30% 0 30%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    color: white;
+    text-align: center;
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.big-title-legend {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+
+div.about {
+    font-size: 7rem;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-right: 50px;
+    text-align: right;
+    transition: width 0.2s;
+}
+
+div.about-text {
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.films {
+    padding: 50px;
+}
+
+div.films-container {
+    padding: 100px;
+}
+
+#film-seq {
+    color: white;
+    padding: 50px;
+    margin: 0 -15px 0 -15px !important;
+    background-color: rgb(231, 76, 60);
+}
+
+.film-seq-title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 10rem;
+    text-align: center;
+}
+
+div.films>p {
+    color: rgb(222, 226, 226);
+}
+
+
+/*SMALL*/
+
+@media (max-width:576px) {
+    .film-seq-title {
+        font-size: 3rem !important;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 70px !important;
+    }
+    .big-title {
+        margin: 150px 20% 0 20%;
+        border-style: solid;
+        border-width: 5px;
+        font-size: 4rem;
+    }
+    div.about {
+        font-size: 5rem;
+        text-align: center;
+        padding: 50px 0 50px 0 ;
+    }
+    div.about-text {
+        text-align: center;
+        margin: 20px;
+        padding: 0;
+    }
+    div.find-me {
+        float: none;
+        text-align: center !important;
+    }
+    div.container-two > div.fin-me { 
+        padding-right: 39%;
+    }
+    footer.footer {
+        height: 180px;
+    }
+    .footer-text {
+        padding-top: 20px;
+        text-align: center !important;
+    }
+    div.col-xs-3 {
+        padding-right: 39%;
+    }
+}
+
+
+/*MEDIUM*/
+
+@media (max-width:768px) {
+    .film-seq-title {
+        font-size: 4rem;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 70px !important;
+    }
+    .big-title {
+        margin: 150px 20% 0 20%;
+        border-style: solid;
+        border-width: 5px;
+        font-size: 4rem;
+    }
+    div.about {
+        font-size: 5rem;
+        text-align: center;
+        padding: 50px 0 50px 0 ;
+    }
+    div.about-text {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+
+/*LARGE*/
+
+@media (max-width:992px) {
+    .film-seq-title {
+        font-size: 4rem;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 70px !important;
+    }
+    .big-title {
+        margin: 150px 20% 0 20%;
+        border-style: solid;
+        border-width: 5px;
+        font-size: 4rem;
+    }
+    div.about {
+        font-size: 5rem;
+        text-align: center;
+        padding: 50px 0 50px 0 ;
+    }
+    div.about-text {
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*EXTRA-LARGE*/
+
+@media (max-width:1200px) {}
+
+.films {
+    padding: 0;
+}
+
+div.films-container {
+    padding: 0;
+}
+
+
+}
+.movie-title {
+    color: white;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    
+    -o-transition: color .1s ease-out, background .1s ease-in;
+    -ms-transition: color .1s ease-out, background .1s ease-in;
+    -moz-transition: color .1s ease-out, background .1s ease-in;
+    -webkit-transition: color .1s ease-out, background .1s ease-in;
+    /* ...and now for the proper property */
+    
+    transition: color .1s ease-out, background .1s ease-in;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.movie-title:hover {
+    color: rgb(192, 57, 43);
+    text-decoration: none;
+}
+#movie-posters {
+    padding: 50px;
+    background-color: white;
+}
+
+.poster-title {
+    color: white;
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    
+    -o-transition: color .1s ease-out, background .1s ease-in;
+    -ms-transition: color .1s ease-out, background .1s ease-in;
+    -moz-transition: color .1s ease-out, background .1s ease-in;
+    -webkit-transition: color .1s ease-out, background .1s ease-in;
+    /* ...and now for the proper property */
+    
+    transition: color .1s ease-out, background .1s ease-in;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.movie-title {
+    color: rgb(189, 195, 199);
+    /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+    
+    -o-transition: color .1s ease-out, background .1s ease-in;
+    -ms-transition: color .1s ease-out, background .1s ease-in;
+    -moz-transition: color .1s ease-out, background .1s ease-in;
+    -webkit-transition: color .1s ease-out, background .1s ease-in;
+    /* ...and now for the proper property */
+    
+    transition: color .1s ease-out, background .1s ease-in;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.poster-title:hover, .movie-title:hover {
+    color: rgb(192, 57, 43);
+    text-decoration: none;
+}
+#more-info {
+    color: white;
+    padding: 50px;
+    margin: 0 -15px 0 -15px !important;
+    background-color: rgb(231, 76, 60);
+}
+
+.links { 
+    padding: 20px;
+}
+div.links>a>svg {
+    fill: white;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+div.links>a>svg:hover {
+    fill: rgb(192, 57, 43);
+}
+.links-container {
+    margin-top: 100px;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    height: 140px;
+    background-color: rgb(44, 62, 80);
+    margin: 0 -15px 0 -15px ;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.heart {
+    color: rgb(231, 76, 60);
+}
+
+div.find-me {
+    text-align: right;
+    float: right;
+}
+
+.social-icon-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.container-one {
+    padding-top: 30px; 
+}
+.container-two {
+    padding-top: 20px; 
+}
+
+div.find-me > a > svg > g > path {
+    fill: white;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+}
+div.col-lg-1:nth-child(n) > a:nth-child(n) > svg:nth-child(n) > g:nth-child(n) > g:nth-child(n) > path:nth-child(n):hover, div.col-lg-1:nth-child(n) > a:nth-child(n) > svg:nth-child(n) > g:nth-child(n) > g:nth-child(n) > path:nth-child(n):active {
+    fill: rgb(81, 113, 145);
+}
